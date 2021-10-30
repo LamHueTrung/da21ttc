@@ -1,0 +1,204 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: rgb(61, 60, 60);
+    --border-color: #dbdbdb;
+    --navbar-height: 34px;
+    --header-height: 120px;
+    --header-with-search-height: calc(var(--header-height)- var(--navbar-height));
+    --star-gold-color :  rgb(255, 187, 0);
+    --primary-color: #672df5;
+
+}
+
+* {
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /*hack 1rem = 10px*/
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif; /*chữ không gạch chân*/
+    box-sizing: border-box;
+}
+/* Responsive */
+.grid {
+    width: 100%; /* màn hình nhỏ hơn 1200 thì sẽ hiển thị 100%*/
+    max-width: 100%;
+    margin: 0 auto; /*căn giữa khi khối này này khối khác*/
+}
+.grid__full-width {
+    width: 100%;
+}
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+
+}
+.title-no-poniter {
+    color: var(--white--color);
+    cursor: text;
+}
+/* test */
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.33333%;
+}
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+    display: inline-block;
+}
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-form));
+    }
+    to {
+        transform: scale(var(--growth-to));
+
+    }
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    animation: fadeIn linear .2s;
+}
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+.modal__body {
+    --growth-form: 0.8;
+    --growth-to: 1;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    animation: growth linear 0.1s;
+}
+/*Buton style*/
+.btn {
+    min-width: 124px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    line-height: 3.6rem;
+    display: inline-block;
+}
+.btn:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+.btn.btn--primary {
+    background: #f53e2d;
+    color: var(--white-color);
+}
+.btn.btn--disabled {
+    color: #949494;
+    cursor: default;
+    background-color: #c3c3c3;
+}
+.btn--size-s {
+    height: 32px;
+    font-size: 1.2rem;
+}
+
+/* Selection */
+.select-input {
+    padding: 0 12px;
+    border-radius: 2px;
+    color: var(--black-color);
+    min-width: 120px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+.select-input:hover  .select-input__list {
+    display: block;
+}
+.select-input__list {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 8px 16px;
+    list-style: none;
+    display: none;
+}
+.select-input__link {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 6px 8px;
+}
+.select-input__link:hover {
+    color: #f53e2d;
+}
+
+/* pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 15px;
+}
+.pagination-item--active .pagination-item__link {
+    background-color: #f53e2d;
+    color: var(--white-color);
+}
+.pagination-item--active .pagination-item__link:hover {
+    opacity: 0.7;
+}
+.pagination-item__link {
+    margin: 0 12px;
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    border-radius: 2px;
+}

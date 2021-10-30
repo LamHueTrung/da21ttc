@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DA21TTC</title>
+    <link rel="stylesheet" href="./https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="./https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                            Tải App
+                            <div class="header__qr">
+                                <img src="./assets/img/QR1.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/ggp.png" alt="Google Play" class="header__qr-download-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/as.png" alt="App Store" class="header__qr-download-img">
+                                    </a>
+                                </div>
+                            </div>
+                         </li>
+                        <li class="header__navbar-item  header__navbar-item--mobile">
+                            <span class="title-no-poniter">Kết Nối</span>
+                            <a href="https://www.facebook.com/namphong.lam.12" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <!-- <li class="header__navbar-item">
+                            <a href="https://docs.google.com/spreadsheets/d/10oPPih26Z3q2G3aDJXX3Yltzt2gJ-eG4/edit#gid=2048078312" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fas fa-user-check"></i>
+                                Điểm danh
+                            </a>
+                        </li> -->
+                        <li class="header__navbar-item  header__navbar-has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông Báo Mới Nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item ">
+                                        <a href="./thongbao/index-1.html#tuoitrehoctapvalamtheoHCM" class="header__notify-link">
+                                            <div class="notify-info">
+                                                <span class="header__notify-name">
+                                                    cuộc thi “Tuổi trẻ học tập và làm theo Tư tưởng, đạo đức, phong cách Hồ Chí Minh”
+                                                </span>
+                                                <span class="header__notify-descriotion"></span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item ">
+                                        <a href="" class="header__notify-link">
+                                            <div class="notify-info">
+                                                <span class="header__notify-name">
+                                                    Kĩ thuật lập trình được nghĩ 05/11
+                                                </span>
+                                                <span class="header__notify-descriotion">Nguyễn Nhứt Lam</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item ">
+                                        <a href="" class="header__notify-link header__notify-item--viewed">
+                                            <div class="notify-info">
+                                                <span class="header__notify-name">
+                                                    Bài tập chương 2 Đại Số Tuyến Tính đã được cập nhật
+                                                </span>
+                                                <span class="header__notify-descriotion">Kim Ngọc</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item ">
+                                        <a href="" class="header__notify-link header__notify-item--viewed">
+                                            <div class="notify-info">
+                                                <span class="header__notify-name">
+                                                    Bài tập Chương 1 Vi Tích Phân A1 đã được cập nhật
+                                                </span>
+                                                <span class="header__notify-descriotion">Phạm Minh Triển</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item ">
+                                        <a href="" class="header__notify-link header__notify-item--viewed">
+                                            <div class="notify-info">
+                                                <span class="header__notify-name">
+                                                    Tài liệu code mẫu Kĩ Thuật Lập Trình đã được cập nhật
+                                                </span>
+                                                <span class="header__notify-descriotion">Nguyễn Nhứt Lam</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="./thongbao/index.html" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--mobile">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                         <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng kí</li>
+                        <li class="header__navbar-item header__navbar-item--strong ">Đăng Nhập</li> -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="./assets/img/Trung.jpg" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Lâm Huệ Trung</span>       
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa Chỉ</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>                 
+                        </li>
+                    </ul>
+                </nav>
+                <!-- header With Search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="./index.html" class="header__logo-link">
+                            <img class="header__logo-img" src="./assets/img/logo.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="header__search ">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm Kiếm Khóa Học">
+                            <!-- search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Kĩ thuật lập trình</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Vi tích phân A1</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Trong nhà</span>
+                            <i class="header__search-select-icon fas fa-caret-down"></i>
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span>Trong nhà</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Tất cả</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>  
+                    </div>
+                    <!-- cart layout -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon far fa-address-card"></i>
+                            <span class="header__cart-notice">4</span>
+                            <!-- No cart : header__cart-list-no-cart -->
+                            <div class="header__cart-list">
+                                <img src="./assets/img/no-cart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">Chưa có sản phẩm</span>
+                                <h4 class="header__cart-heading">Môn học đã đăng kí</h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- cart item -->
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/ky-thuat-lap-trinh-0-749.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Kĩ thuật lập trình</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">Nguyễn Nhứt Lam</span>
+                                                    </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    phân loại: Code
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                                
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/A1.png" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Vi tích phân</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">Phạm Minh Triển</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    phân loại: Logic
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                                
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/đại-số-tuyến-tính.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Đại Số Tuyến Tính</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">Kim Ngọc</span>
+                                                    </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    phân loại: logic
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                                
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/av.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">AVKC1</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">Pho La</span>
+                                                    </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    phân loại: giao tiếp
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                                
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="header__cart-view-cart btn btn--primary">Xem tất cả</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </header>
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">   
+                                    <i class="category__heading-icon fas fa-list"></i>     
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item-active">
+                                    <a href="" class="category-item__link">Tài liệu giảng dạy</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="./index-2.html" class="category-item__link">Tài liệu tham khảo</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="./index-3.html" class="category-item__link">Nhiệm vụ</a>
+                                </li>
+                            </ul>
+                            <ul class="category-list__mobile">
+                                <li class="category-item category-item-active">
+                                    <a href="" class="category-item__link">Tài liệu giảng dạy</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="./index-2.html" class="category-item__link">Tài liệu tham khảo</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="./index-3.html" class="category-item__link">Nhiệm vụ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn">Mới Nhất</button>
+                            <button class="home-filter__btn btn btn--primary">Sắp Hết Hạn</button>
+                            
+
+                            <div class="select-input">
+                                <span class="select-input__label">Môn</span>
+                            <i class="select-input__icon fas fa-caret-down"></i>
+                            <div class="select-input__list">
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Kĩ thuật lập trình</a>
+                                    <a href="" class="select-input__link">vi tích phân A1</a>
+                                    <a href="" class="select-input__link">đại số tuyến tính</a>
+                                </li>
+                            </div>
+                            </div>
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                <span class="home-filter__page-current">1</span>/1
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn-dissabled">
+                                        <i class="home-filter__page-icon fas fa-caret-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn-dissabled">
+                                        <i class="home-filter__page-icon fas fa-caret-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- container san pham -->
+                        <div class="home-product">
+                            <!-- grid -> row -> column -->
+                            <div class="grid__row ">
+                                <!-- product-item -->
+                                <div class="grid__column-2-4">
+                                    <a href="https://lms.tvu.edu.vn/mod/assign/view.php?id=93401">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_6uQ4H9K2xZYQbcsnRk0PBnEYv4jMMCp5PRbULUQjGIlMhD1E4MxYs1iyuKBSLE5IUpA&usqp=CAU);"></div>
+                                            <h4 class="home-product-item__name"> Viết chương trình kiểm tra hai số nguyên dương a, b có cùng nằm trong khoảng 40..50 hay không? (1: cùng trong khoảng 40..50; 0: không cùng trong khoảng 40..50)</h4>
+                                            <div class="home-product-item__price">
+                                                
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đánh giá</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__origin-name">Kĩ thuật lập trình</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu Thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent"></span>
+                                                <span class="home-product-item__sale-off-label">Chấm Điểm</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="https://lms.tvu.edu.vn/mod/assign/view.php?id=93401">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_6uQ4H9K2xZYQbcsnRk0PBnEYv4jMMCp5PRbULUQjGIlMhD1E4MxYs1iyuKBSLE5IUpA&usqp=CAU);"></div>
+                                            <h4 class="home-product-item__name"> Viết chương trình tính khoảng cách giữa hai điểm A(x1, y1) và B(x2, y2) trong mặt phẳng Oxy.</h4>
+                                            <div class="home-product-item__price">
+                                                
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đánh giá</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__origin-name">Kĩ thuật lập trình</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu Thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent"></span>
+                                                <span class="home-product-item__sale-off-label">Chấm Điểm</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="https://lms.tvu.edu.vn/pluginfile.php/185554/mod_resource/content/3/VI%20TICH%20PHAN%20A1.pdf">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTytfKj1xnRUwUf96x_Sn0NSa0OZoj4vZwEUg&usqp=CAU);"></div>
+                                            <h4 class="home-product-item__name">Tài liệu chương 2</h4>
+                                            <div class="home-product-item__price">
+                                                
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đánh giá</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__origin-name">Vi tích phân A1</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu Thích</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="https://lms.tvu.edu.vn/mod/assign/view.php?id=93401">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_6uQ4H9K2xZYQbcsnRk0PBnEYv4jMMCp5PRbULUQjGIlMhD1E4MxYs1iyuKBSLE5IUpA&usqp=CAU);"></div>
+                                            <h4 class="home-product-item__name"> Viết chương trình chuyển đổi số nguyên (giây) sang giờ, phút, giây.</h4>
+                                            <div class="home-product-item__price">
+                                                
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đánh giá</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__origin-name">Kĩ thuật lập trình</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu Thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent"></span>
+                                                <span class="home-product-item__sale-off-label">Chấm Điểm</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="https://lms.tvu.edu.vn/mod/assign/view.php?id=91442">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://vnuhcmpress.edu.vn/wp-content/uploads/2019/11/%C4%91%E1%BA%A1i-s%E1%BB%91-tuy%E1%BA%BFn-t%C3%ADnh.jpg);"></div>
+                                            <h4 class="home-product-item__name"> Bài tập chương 1</h4>
+                                            <div class="home-product-item__price">
+                                                
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đánh giá</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__origin-name">Đại số tuyến tính</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu Thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent"></span>
+                                                <span class="home-product-item__sale-off-label">Chấm Điểm</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="https://lms.tvu.edu.vn/mod/assign/view.php?id=95001">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://vnuhcmpress.edu.vn/wp-content/uploads/2019/11/%C4%91%E1%BA%A1i-s%E1%BB%91-tuy%E1%BA%BFn-t%C3%ADnh.jpg);"></div>
+                                            <h4 class="home-product-item__name"> Bài tập Chương 2</h4>
+                                            <div class="home-product-item__price">
+                                                
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đánh giá</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__origin-name">Đại số tuyến tính</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu Thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent"></span>
+                                                <span class="home-product-item__sale-off-label">Chấm Điểm</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="https://lms.tvu.edu.vn/pluginfile.php/185554/mod_resource/content/3/VI%20TICH%20PHAN%20A1.pdf">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTytfKj1xnRUwUf96x_Sn0NSa0OZoj4vZwEUg&usqp=CAU);"></div>
+                                            <h4 class="home-product-item__name">Bài tập đạo hàm của hàm số 1 biến và ứng dụng</h4>
+                                            <div class="home-product-item__price">
+                                                
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đánh giá</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__origin-name">Vi tích phân A1</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu Thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent"></span>
+                                                <span class="home-product-item__sale-off-label">Chấm Điểm</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="https://lms.tvu.edu.vn/mod/assign/view.php?id=93401">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_6uQ4H9K2xZYQbcsnRk0PBnEYv4jMMCp5PRbULUQjGIlMhD1E4MxYs1iyuKBSLE5IUpA&usqp=CAU);"></div>
+                                            <h4 class="home-product-item__name"> Viết chương trình nhập hai số x, y. Đổi giá trị của x và y sử dụng biến tạm t.</h4>
+                                            <div class="home-product-item__price">
+                                                
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đánh giá</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__origin-name">Kĩ thuật lập trình</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu Thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent"></span>
+                                                <span class="home-product-item__sale-off-label">Chấm Điểm</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="https://drive.google.com/file/d/1f1f-rS7QdXytUwvtUEEhcqiIsgeIXdXP/view">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(data:image/jpeg;base64,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);"></div>
+                                            <h4 class="home-product-item__name">Tài liệu anh văn không chuyên 1 cho người mới bắt đầu học.</h4>
+                                            <div class="home-product-item__price">
+                                                
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="home-product-item__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">Đánh giá</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__origin-name">Kĩ thuật lập trình</span>
+                                            </div>
+                                            <div class="home-product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                <span>Yêu Thích</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </a>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                        <ul class="pagination">
+                            <!-- <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-left"></i>
+                                </a>
+                            </li> -->
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__link">1</a>
+                            </li>
+                            <!-- <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">14</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-right"></i>
+                                </a>
+                            </li> -->
+                        </ul>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">TÀI TRỢ</h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">visual Studio Code</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">https://github.com</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">https://drive.google.com</a>
+                                </li>
+                            </ul>                        
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Quy Định</h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Nội dung</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Trách dhiệm</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Điều khoản</a>                       
+                                </li>
+                            </ul>                                
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        <i class="footer-item__link-icon fab fa-facebook"></i>
+                                        Facebook</a>
+                                    </li>
+                                    <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        <i class="footer-item__link-icon fab fa-instagram"></i>
+                                        Instagram</a>
+                                    </li>
+                                    <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        <i class="footer-item__link-icon fab fa-staylinked"></i>
+                                        Linkedin</a>        
+                                </li>
+                            </ul>                            
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Tải App Trên UD</h3>
+                            <div class="footer__download">
+                                <img src="./assets/img/QR1.png" alt="" class="footer__download-qr">
+                                <div class="footer__dowload-apps">
+                                    <a href="" class="footer__dowload-apps-link">
+                                        <img src="./assets/img/ggp.png" alt="" class="footer__dowload-apps-img">
+                                    </a>
+                                    <a href="" class="footer__dowload-apps-link">
+                                    <img src="./assets/img/as.png" alt="" class="footer__dowload-apps-img">
+                                    </a>
+                                </div>
+                            </div>                          
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Bản Quyền</h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Lâm Huệ Trung Official</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">lamhuetrung@gmail.com</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link"></a>
+                                </li>
+                            </ul>                                
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer__bottom">
+            <div class="grid">
+                <p class="footer__text">© 2021 - Bản quyền thuộc về Lâm Huệ Trung</p>
+            </div>
+        </div>
+        
+    </div>
+   
+</body>
+</html>
