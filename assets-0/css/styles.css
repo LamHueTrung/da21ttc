@@ -157,7 +157,7 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url(/assets/img/logo.jpg) center / cover no-repeat;
+    background: url(../img/logo.jpg) center / cover no-repeat;
 }
 
 #slider .text-content {
