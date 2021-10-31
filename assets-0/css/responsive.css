@@ -41,6 +41,14 @@
     .contact-info {
         margin-top: 32px;
     }
+    #slider .text-content {
+        font-size: 11px;
+        bottom: 22px;
+        left: 57%;
+    }
+    #slider .text-heading {
+        margin-bottom: 0;
+    }
 }
 /*tablet*/
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
